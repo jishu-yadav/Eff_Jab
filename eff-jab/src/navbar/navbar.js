@@ -17,7 +17,7 @@ const NavBar=()=>{
           <Nav className="ml-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/register">Register</Nav.Link>
-            <Nav.Link href="/book">Book Appointment</Nav.Link>
+            <Nav.Link href="/community">Community</Nav.Link>
             <Nav.Link href="/upvote">Upvote</Nav.Link>
           </Nav>
         </Navbar>
