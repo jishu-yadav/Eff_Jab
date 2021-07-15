@@ -1,0 +1,17 @@
+#__p__vaccination_registration {
+	top: 0px;
+	padding: 30px 50px;
+	overflow: hidden;
+	font-family: Raleway;
+	font-size: 38px;
+	text-align: center;
+	color:#000000;
+}
+
+.form {
+    text-align:center;
+}
+
+.note {
+    color:#1E737F
+}

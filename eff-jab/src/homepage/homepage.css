@@ -1,0 +1,53 @@
+#rectangle_1 {
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 109px;
+	background:rgba(86.86,205.57,231.63,1);
+}
+
+#__p__register_book_appointement_upvote {
+	top: 0px;
+	padding-right: 50px;
+	width: 100%;
+	height: 126px;
+    float:right;
+	overflow: hidden;
+	font-family: Raleway;
+	font-size: 24px;
+	text-align: right;
+	color:#000000;
+}
+
+
+#__p__welcome_to_eff_jab {
+	top: 109px;
+	left: -12px;
+	width: 100%;
+	height: 155px;
+	overflow: hidden;
+	font-family: Raleway;
+	font-size: 72px;
+	font-weight: bold;
+	text-align: center;
+	color:#1E737F;
+}
+
+#banner_version2_1 {
+	top: 214px;
+	left: 0px;
+	width: 100%;
+	height: 457px;
+}
+
+#__p__eff_jab_presents_to_you_efficient_vaccination_drive_and_getting_vaccinated_from_the_comfort_of_your_home {
+	top: 701px;
+	left: -5px;
+	width: 100%;
+	height: 190px;
+	overflow: hidden;
+	font-family: Raleway;
+	font-size: 30px;
+	text-align: center;
+	color:#FFA903;
+}
