@@ -4,7 +4,7 @@ import {Route,Link} from 'react-router-dom';
 //import { FontAwesomeIcon } from '@fontawesome/react-fontawesome'
 import { Navbar,NavDropdown,FormControl,Button,Nav,Form } from 'react-bootstrap';
 //import './navbar.css'
-import $ from 'jquery'
+//import $ from 'jquery'
 
 const NavBar=()=>{
 
