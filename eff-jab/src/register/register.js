@@ -10,10 +10,10 @@ const Register=()=>{
                 <Navbar/>
 
                 <div id="__p__vaccination_registration" >
-                    <u>Vaccination Registration</u> 
+                  <h1> Vaccination Registration</h1>
                 </div>
 
-                <div class="form">
+                <div class="form container">
                 <Form>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>AADHAR NO: </Form.Label>
@@ -22,10 +22,7 @@ const Register=()=>{
                         </Form.Text>
                     </Form.Group>
                     <br/>
-                    <Form.Group controlId="formFileLg" className="mb-3">
-                        <Form.Label>AADHAR card: </Form.Label>
-                        <Form.Control type="file" />
-                    </Form.Group>
+                    
                     <br/>
                     <div key={`inline-radio`} className="mb-3">
                         <Form.Label>Person with disability?  </Form.Label>
@@ -45,6 +42,10 @@ const Register=()=>{
                         />
                     </div>
                     <br/>
+                    <Form.Group controlId="formFileLg" className="mb-3">
+                        <Form.Label>PwD document </Form.Label>
+                        <Form.Control type="file" />
+                    </Form.Group>
                     <div key={`inline-radio`} className="mb-3">
                         <Form.Label>Age above 45? </Form.Label>
                         <Form.Check
@@ -128,8 +129,9 @@ const Register=()=>{
                     </Button></div>
                     </Form>
                     <br/><br/>
-                <Footer/>
+               
                 </div>
+                <Footer/>
             </div>
     )
 }

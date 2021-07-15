@@ -1,11 +1,11 @@
 import React,{useState} from 'react'
 import './community.css'
-
+import { FormControl,Button,Form,Row,Col } from 'react-bootstrap';
 
 const Community=()=>{
 
     const [data,setData]= useState({
-        typeofOrg:"",State:"",City:"",Locality:"",above45:"",below45:"",disability:"",timeSlot:"12pm-2pm",phone:""
+        typeofOrg:"",State:"",City:"",Locality:"",above45:"",below45:"",disability:"",timeSlot:"",phone:""
     })
     let name,value
     const handleInput=(e)=>{
@@ -46,51 +46,107 @@ const Community=()=>{
             <div>
                 <h1>Book Appointment for community vaccination drive</h1>
                 <div>
-                    <label>Type of organisation</label>
-                    <input name='typeofOrg' onClick={handleInput} type="radio" id="html"  value="Office"/>
-                    <label for="Office">Office</label>
-                    <input type="radio" onClick={handleInput} id="css" name='typeofOrg' value="Housing Society"/>
-                    <label for="Housing Society">Housing Society</label>
-                    <input type="radio" onClick={handleInput} id="javascript" name='typeofOrg' value="Educational Institute"/>
-                    <label for="Educational Institute">Educational Institute</label>
+                    
+                    <div key={`inline-radio`} className="mb-3">
+                        <Form.Label>Type of Organistation </Form.Label> <br/>
+                        <Form.Check
+                            inline
+                            label="Office"
+                            name='typeofOrg'
+                            value='Office'
+                            type='radio'
+                            id={`inline-radio-1`}
+                            onClick={handleInput}
+                        />
+                        <Form.Check
+                            inline
+                            label="Housing Society"
+                            name='typeofOrg'
+                            type='radio'
+                            value="Housing Society"
+                            id={`inline-radio-2`}
+                            onClick={handleInput}
+                        />
+                        <Form.Check
+                            inline
+                            label="education Insitiute"
+                            name='typeofOrg'
+                            type='radio'
+                            value="education Insitiute"
+                            id={`inline-radio-2`}
+                            onClick={handleInput}
+                        />
+                       
+                    </div>
+                   
                 </div>
-                <div>
+                <div class='mt-4 form-group d-flex justify-content-around align-items-center'>
                     <label>Address</label>
-                    <input name='State' placeholder='State' onChange={handleInput}/>
-                    <input name='City' placeholder='City' onChange={handleInput}/>
-                    <input name='Locality' placeholder='Locality' onChange={handleInput}/>
+                    <input class='form-control ml-2 ' name='State' placeholder='State' onChange={handleInput}/>
+                    <input class='form-control ml-2' name='City' placeholder='City' onChange={handleInput}/>
+                    <input class='form-control ml-2' name='Locality' placeholder='Locality' onChange={handleInput}/>
                 </div>
-                <div>
+                <div class='mt-4 d-flex justify-content-between align-items-center'>
                     <label>Contact no.</label>
-                    <input name='phone' onChange={handleInput}/>
+                    <input class='form-control' name='phone' onChange={handleInput}/>
                 </div> 
                
-                <div>
+                <div class='mt-4 d-flex justify-content-between  align-items-center'>
                     <label>Members above age of 45</label>
-                    <input name='above45' onChange={handleInput}/>
+                    <input class='form-control' name='above45' onChange={handleInput}/>
                 </div>
-                <div>
+                <div class='mt-4 d-flex justify-content-between  align-items-center'>
                     <label>Members below the age of 45</label>
-                    <input name='below45' onChange={handleInput}/>
+                    <input class='form-control' name='below45' onChange={handleInput}/>
                 </div>
-                 <div>
+                 <div class='mt-4 d-flex justify-content-between align-items-center'>
                     <label>Members with disability</label>
-                    <input name='disability' onChange={handleInput}/>
+                    <input class='form-control' name='disability' onChange={handleInput}/>
                 </div>  
 
-                <div class="dropdown"  name='timeSlot'  onSelect={handleInput}>
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown button
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item"  >Action</a>
-                            <a class="dropdown-item" name='timeSlot' >Another action</a>
-                            <a class="dropdown-item" name='timeSlot'  >Something else here</a>
-                        </div>
-                </div>
+                <div key={`inline-radio`} className="mb-3">
+                        <Form.Label>Choose your time slot: </Form.Label> <br/>
+                        <Form.Check
+                            inline
+                            label="11am-12pm"
+                            value="11am-12pm"
+                            name="timeSlot"
+                            type='radio'
+                            id={`inline-radio-1`}
+                            onClick={handleInput}
+                        />
+                        <Form.Check
+                            inline
+                            label="12-1pm"
+                            value="12-1pm"
+                            name="timeSlot"
+                            type='radio'
+                            id={`inline-radio-2`}
+                            onClick={handleInput}
+                        />
+                        <Form.Check
+                            inline
+                            label="1-2pm"
+                            value="1-2pm"
+                            name="timeSlot"
+                            type='radio'
+                            id={`inline-radio-2`}
+                            onClick={handleInput}
+                        />
+                        <Form.Check
+                            inline
+                            label="2pm-3pm"
+                            value="2pm-3pm"
+                            name="timeSlot"
+                            type='radio'
+                            id={`inline-radio-2`}
+                            onClick={handleInput}
+                        />
+                    </div>
+
                 <small>Note: All members should carry their adhar card at the tme of vaccination</small>
                 <div>
-                <button onClick={postData}>Submit</button>
+                <button class='btn btn-primary' onClick={postData}>Submit</button>
                 </div>  
             </div>
         </div>
