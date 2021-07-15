@@ -92,28 +92,28 @@ const Register=()=>{
                         <Form.Check
                             inline
                             label="11am-12pm"
-                            name="time1"
+                            name="slot"
                             type='radio'
                             id={`inline-radio-1`}
                         />
                         <Form.Check
                             inline
                             label="12-1pm"
-                            name="time2"
+                            name="slot"
                             type='radio'
                             id={`inline-radio-2`}
                         />
                         <Form.Check
                             inline
                             label="1-2pm"
-                            name="time3"
+                            name="slot"
                             type='radio'
                             id={`inline-radio-2`}
                         />
                         <Form.Check
                             inline
                             label="2-3pm"
-                            name="time4"
+                            name="slot"
                             type='radio'
                             id={`inline-radio-2`}
                         />
