@@ -15,7 +15,7 @@ const Register=()=>{
 
                 <div class="form">
                 <Form>
-                    <Form.Group className="col-md-6" controlId="formBasicEmail">
+                    <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>AADHAR NO: </Form.Label>
                         <Form.Control size="lg" type="aadhar" />
                         <Form.Text className="text-muted">
@@ -24,47 +24,47 @@ const Register=()=>{
                     <br/>
                     <Form.Group controlId="formFileLg" className="mb-3">
                         <Form.Label>AADHAR card: </Form.Label>
-                        <Form.Control type="file" size="lg" />
+                        <Form.Control type="file" />
                     </Form.Group>
                     <br/>
                     <div key={`inline-radio`} className="mb-3">
-                        <Form.Label>Person with disability? </Form.Label>
+                        <Form.Label>Person with disability?  </Form.Label>
                         <Form.Check
                             inline
                             label="Yes"
-                            name="yes"
+                            name="disability"
                             type='radio'
                             id={`inline-radio-1`}
                         />
                         <Form.Check
                             inline
                             label="No"
-                            name="no"
+                            name="disability"
                             type='radio'
                             id={`inline-radio-2`}
                         />
                     </div>
                     <br/>
-                    <div key={`inline-radio`} className="col-md-6">
+                    <div key={`inline-radio`} className="mb-3">
                         <Form.Label>Age above 45? </Form.Label>
                         <Form.Check
                             inline
                             label="Yes"
-                            name="yes"
+                            name="age"
                             type='radio'
                             id={`inline-radio-1`}
                         />
                         <Form.Check
                             inline
                             label="No"
-                            name="no"
+                            name="age"
                             type='radio'
                             id={`inline-radio-2`}
                         />
                     </div>
                     <br/>
                     <Form.Group className="mb-3" controlId="formGridAddress1">
-                        <Form.Label size="lg">Address: </Form.Label>
+                        <Form.Label>Address:  </Form.Label>
                         <Form.Control />
                     </Form.Group>
                     <br/>
@@ -87,8 +87,8 @@ const Register=()=>{
                     </Row>
                     <br/>
 
-                    <div key={`inline-radio`} className="col-md-6">
-                        <Form.Label>Choose your time slot: </Form.Label>
+                    <div key={`inline-radio`} className="mb-3">
+                        <Form.Label>Choose your time slot: </Form.Label> <br/>
                         <Form.Check
                             inline
                             label="11am-12pm"
@@ -121,11 +121,11 @@ const Register=()=>{
 
                     <br/>
                     <div class="note">Note : Please bring your original document at the time of vaccination</div>
-                    <br/>
+                    <br/><br/>
 
-                    <Button variant="primary" type="submit" size="lg">
+                    <div class="submit-button"><Button variant="primary" type="submit" size="lg">
                         Submit
-                    </Button>
+                    </Button></div>
                     </Form>
                     <br/><br/>
                 <Footer/>
