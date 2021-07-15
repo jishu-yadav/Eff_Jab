@@ -5,11 +5,14 @@ import {BrowserRouter,Switch,Route} from 'react-router-dom';
 import HomePage from './homepage/homepage'
 import Register from './register/register'
 
+import CenterRegister from "./components/CenterRegister";
 function App() {
   return (
     
       <BrowserRouter>
+      
          <Switch>
+       
            <Route path='/' exact>
               <HomePage />
            </Route>
@@ -18,8 +21,12 @@ function App() {
            </Route>
            <Route path='/community' exact>
              <Community/>
+           
            </Route>
-         
+           <Route path='/centerregister' exact>
+              <CenterRegister />
+           </Route>
+
          </Switch>
       </BrowserRouter>
       

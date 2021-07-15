@@ -2,6 +2,7 @@
   "name": "eff-jab",
   "version": "0.1.0",
   "private": true,
+  
   "dependencies": {
     "@fontawesome/free-solid-svg-icons": "^5.15.3",
     "@fontawesome/react-fontawesome": "^0.1.14",
