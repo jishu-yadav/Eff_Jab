@@ -10,7 +10,7 @@ const Register=()=>{
                 <Navbar/>
 
                 <div id="__p__vaccination_registration" >
-                    <br/><u>Vaccination Registration</u> 
+                    <u>Vaccination Registration</u> 
                 </div>
 
                 <div class="form">
@@ -127,7 +127,7 @@ const Register=()=>{
                         Submit
                     </Button>
                     </Form>
-                    <br/>
+                    <br/><br/>
                 <Footer/>
                 </div>
             </div>
