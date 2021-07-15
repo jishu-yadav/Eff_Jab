@@ -109,14 +109,14 @@ const Register=()=>{
                             label="1-2pm"
                             name="slot"
                             type='radio'
-                            id={`inline-radio-2`}
+                            id={`inline-radio-3`}
                         />
                         <Form.Check
                             inline
                             label="2-3pm"
                             name="slot"
                             type='radio'
-                            id={`inline-radio-2`}
+                            id={`inline-radio-4`}
                         />
                     </div>
 
