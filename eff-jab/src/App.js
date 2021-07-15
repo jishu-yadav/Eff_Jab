@@ -4,7 +4,7 @@ import Community from './community/community'
 import {BrowserRouter,Switch,Route} from 'react-router-dom';
 import HomePage from './homepage/homepage'
 import Register from './register/register'
-
+import Upvote from './upvote/upvote'
 import CenterRegister from "./components/CenterRegister";
 function App() {
   return (
@@ -25,6 +25,9 @@ function App() {
            </Route>
            <Route path='/centerregister' exact>
               <CenterRegister />
+           </Route>
+           <Route path='/upvote' exact>
+             <Upvote/>
            </Route>
 
          </Switch>

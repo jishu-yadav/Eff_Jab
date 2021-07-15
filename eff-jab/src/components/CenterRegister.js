@@ -37,7 +37,7 @@ const PostData=async (e)=>{
         })
     }).then((res)=>{
         console.log(res)
-
+        alert('successful registration')
         res.json().then((resp)=>{
            console.warn(resp)
            
@@ -116,3 +116,4 @@ const PostData=async (e)=>{
 }
 
 export default CenterRegister
+
