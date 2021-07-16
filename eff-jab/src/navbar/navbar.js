@@ -16,7 +16,7 @@ const NavBar=()=>{
           <Navbar.Brand href="/">EFF_JAB</Navbar.Brand>
           <Nav className="ml-auto">
             <Nav.Link href="/">Home</Nav.Link>
-            
+            <Nav.Link href="/centerregister">Center</Nav.Link>
             <Nav.Link href="/community">Community</Nav.Link>
             <Nav.Link href="/upvote">Upvote</Nav.Link>
             <Nav.Link href="https://covid19selfdiagnosis.herokuapp.com/">Self Diagnosis</Nav.Link>
