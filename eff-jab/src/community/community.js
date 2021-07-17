@@ -1,7 +1,8 @@
 import React,{useState} from 'react'
 import './community.css'
 import { FormControl,Button,Form,Row,Col } from 'react-bootstrap';
-
+import Navbar from '../navbar/navbar'
+import Footer from '../footer/footer'
 const Community=()=>{
 
     const [data,setData]= useState({
@@ -42,8 +43,9 @@ const Community=()=>{
     }
 
     return(
-        <div class='container'>
-            <div>
+        <div>
+            <Navbar/>
+            <div  class='container'>
                 <h1>Book Appointment for community vaccination drive</h1>
                 <div>
                     
@@ -86,22 +88,22 @@ const Community=()=>{
                     <input class='form-control ml-2' name='City' placeholder='City' onChange={handleInput}/>
                     <input class='form-control ml-2' name='Locality' placeholder='Locality' onChange={handleInput}/>
                 </div>
-                <div class='mt-4 d-flex justify-content-between align-items-center'>
-                    <label>Contact no.</label>
-                    <input class='form-control' name='phone' onChange={handleInput}/>
+                <div class='mt-4 d-flex justify-content-start align-items-center'>
+                    <label class='mr-4'>Contact no.</label>
+                    <input class='form-control fields' name='phone' onChange={handleInput}/>
                 </div> 
                
-                <div class='mt-4 d-flex justify-content-between  align-items-center'>
-                    <label>Members above age of 45</label>
-                    <input class='form-control' name='above45' onChange={handleInput}/>
+                <div class='mt-4 d-flex justify-content-start  align-items-center'>
+                    <label class='mr-4'>Members above age of 45</label>
+                    <input class='form-control fields' name='above45' onChange={handleInput}/>
                 </div>
-                <div class='mt-4 d-flex justify-content-between  align-items-center'>
-                    <label>Members below the age of 45</label>
-                    <input class='form-control' name='below45' onChange={handleInput}/>
+                <div class='mt-4 d-flex justify-content-start  align-items-center'>
+                    <label class='mr-4'>Members below the age of 45</label>
+                    <input class='form-control fields' name='below45' onChange={handleInput}/>
                 </div>
-                 <div class='mt-4 d-flex justify-content-between align-items-center'>
-                    <label>Members with disability</label>
-                    <input class='form-control' name='disability' onChange={handleInput}/>
+                 <div class='mt-4 d-flex justify-content-start align-items-center'>
+                    <label class='mr-4'>Members with disability</label>
+                    <input class='form-control fields' name='disability' onChange={handleInput}/>
                 </div>  
 
                 <div key={`inline-radio`} className="mb-3">
@@ -149,6 +151,7 @@ const Community=()=>{
                 <button class='btn btn-primary' onClick={postData}>Submit</button>
                 </div>  
             </div>
+            <Footer />
         </div>
     );
 
