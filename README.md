@@ -1,1 +1,1 @@
-# Eff_Jab
+# Eff_Jab : An Efficient Jabbing Application
